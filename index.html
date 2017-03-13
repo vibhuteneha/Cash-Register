@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cash Register</title>
+	<link rel="stylesheet" type="text/css" href="custom.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+	<div id="cashreg">
+		<h2>Cash Register</h2>
+			<p id="display"></p>
+
+				<div class="row">
+					<div class="col-md-3"><label>Add bill</label></div>
+					<div class="col-md-4"><input type="text" name="add" id="addele" class="form-control"></div>
+					<div class="col-md-2"><button class="btn btn-primary" onclick="add()">Add</button></div>
+					<div class="col-md-3" <span id="error1" style="visibility:hidden; color: red;"> Enter Valid bill.</span></div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-md-3"><label>Remove bill</label></div>
+					<div class="col-md-4"><input type="text" name="remove" id="removeele" class="form-control"></div>
+					<div class="col-md-2"><button class="btn btn-primary" onclick="remove()">Remove</button></div>
+					<div class="col-md-3"> <span id="error2" style="display: none; color: red;"> This value is not present in Cash Register</span>  <span id="error3" style="display: none; color: red;"> Cash Register is Empty!!</span></div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-md-3"><label>Get Change</label></div>
+					<div class="col-md-4"><input type="text" name="change" id="changeele" class="form-control"></div>
+					<div class="col-md-2"><button class="btn btn-primary" onclick="change()">Change</button></div>
+					<div class="col-md-3" <span id="error4" style="display: none; color: red;"> Cash Register can't give change!!</span> </div>
+				</div>
+				<p id="changegiven">Bill - Nos</p>
+		</div>
+	</div>
+
+	<script src="challenge.js"></script>
+</body>
+</html>

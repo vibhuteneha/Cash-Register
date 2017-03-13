@@ -1,0 +1,22 @@
+h2{
+	text-align: center;
+}
+#cashreg{
+	width: 700px;
+	height: auto;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #BFBFBF;
+	background-color: #ebebe0;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+label{
+	
+	font-size: 18px;
+}
+
+p{
+	font-size: 18px;
+	padding: 10px;
+}
